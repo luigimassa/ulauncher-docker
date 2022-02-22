@@ -97,7 +97,7 @@ class ContainerDetailsView():
                     description="Opens a new sh shell in the container",
                     highlightable=False,
                     on_enter=RunScriptAction(
-                        "x-terminal-emulator -e docker exec -it %s sh" %
+                        "x-terminal-emulator -e docker exec -it %s bash" %
                         container.short_id, [])))
 
             items.append(
